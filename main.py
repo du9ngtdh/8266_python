@@ -2,9 +2,7 @@ import time
 from machine import Pin
 from blink import Blink
 import machine
-
 machine.freq(80000000)
-
 
 class Main:
     blink = Blink(1, 50)

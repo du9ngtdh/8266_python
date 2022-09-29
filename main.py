@@ -6,8 +6,6 @@ class Main:
     led = Pin(2, Pin.OUT)
     def setup(e):
         pass
-
-
     def loop(e):
         if (e.blink.available()):
             e.led.value(e.blink.value())

@@ -1,6 +1,4 @@
 import json
-
-
 class FJson:
     def __init__(self, data: str):
         self.__json = json.loads(data)

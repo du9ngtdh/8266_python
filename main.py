@@ -1,33 +1,28 @@
 import time
 from machine import Pin
 from blink import Blink
-import machine
-machine.freq(80000000)
-
 class Main:
     blink = Blink(1, 50)
     led = Pin(2, Pin.OUT)
-    count = 0
     def setup(e):
         pass
 
     def loop(e):
-        e.count += 1
         if (e.blink.available()):
-            print(e.count)
             e.led.value(e.blink.value())
 
 
 class Program:
     main = Main()
     D1_input = Pin(5, Pin.IN, Pin.PULL_UP)
-    xungReset = Blink(2, 99.99)
+    xungReset = Blink(1, 99.9)
     D0_outPut = Pin(16, Pin.OUT)
 
     def exit(e):
         if (e.xungReset.available()):
             e.D0_outPut.value(e.xungReset.value())
             return e.D1_input.value() == 0
+        
 
     def run(e):
         print("start program")

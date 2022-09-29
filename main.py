@@ -36,7 +36,3 @@ class Program:
 program = Program()
 if __name__ == "__main__":
     program.run()
-
-# start = [13,3,3,13,1,4,3,3]
-# newline = [13,10]
-# end = 4

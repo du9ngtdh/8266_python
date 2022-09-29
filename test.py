@@ -1,3 +1,0 @@
-okok
-
-test thanh cong

@@ -6,10 +6,15 @@ class Blink:
     _low = 0
     def __init__(e, hz: float = 1, duty: float = 50) -> None:
         e.tong = 1000/hz
-        e._hight = (duty/100)*e.tong
+        e._hight = duty/100*e.tong
         e._low = e.tong - e._hight
-        print(e._hight)
-        print(e._low)
+        
+    def setting(self,hz:float =-1,duty:float =-1):
+        if(hz != -1):
+            self.tong = 1000/hz
+        self._hight = (duty/100)*self._hight
+        self._low = self.tong - self._hight
+        
     
     def value(e) -> int:
         return e._value

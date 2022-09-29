@@ -9,14 +9,15 @@ machine.freq(80000000)
 class Main:
     blink = Blink(1, 50)
     led = Pin(2, Pin.OUT)
-
+    count = 0
     def setup(e):
         pass
 
     def loop(e):
+        e.count += 1
         if (e.blink.available()):
+            print(e.count)
             e.led.value(e.blink.value())
-            e.cout = 0
 
 
 class Program:

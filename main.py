@@ -7,6 +7,7 @@ class Main:
     def setup(e):
         pass
 
+
     def loop(e):
         if (e.blink.available()):
             e.led.value(e.blink.value())

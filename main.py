@@ -3,7 +3,7 @@ from machine import Pin
 from blink import Blink
 import machine
 
-machine.freq(80000000)
+machine.freq(160000000)
 
 
 class Main:

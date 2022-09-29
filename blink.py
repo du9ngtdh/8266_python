@@ -9,6 +9,7 @@ class Blink:
         e._hight = duty/100*e.tong
         e._low = e.tong - e._hight
         
+        
     def setting(self,hz:float =-1,duty:float =-1):
         if(hz != -1):
             self.tong = 1000/hz

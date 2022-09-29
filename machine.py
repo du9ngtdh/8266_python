@@ -1,4 +1,5 @@
 class Pin:
+    
     OUT = "OUT"
     IN = "IN"
     def value(e,value:int):

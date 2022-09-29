@@ -1,4 +1,7 @@
 import time
+# start = [13,3,3,13,1,4,3,3]
+# newline = [13,10]
+# end = 4
 class Blink:
     _begin = 0
     _value = 0
